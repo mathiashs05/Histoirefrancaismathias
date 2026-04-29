@@ -1,0 +1,185 @@
+/* =========================================== */
+/* FEUILLE DE STYLE - Le français au Sénégal   */
+/* =========================================== */
+
+/* Réinitialisation de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corps de la page */
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.7;
+  color: #2c2c2c;
+  background-color: #faf6f0;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* En-tête et navigation */
+header {
+  background-color: #1d6b3a;
+  /* vert (drapeau sénégalais) */
+  padding: 25px 35px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  border-radius: 0 0 8px 8px;
+  border-bottom: 4px solid #f5d033;
+  /* jaune (drapeau sénégalais) */
+}
+
+header h1 {
+  color: #f5d033;
+  margin-bottom: 18px;
+  font-size: 1.6em;
+  font-family: Georgia, serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  font-size: 0.95em;
+}
+
+nav a:hover {
+  background-color: #c8302d;
+  /* rouge (drapeau sénégalais) */
+}
+
+/* Contenu principal */
+main {
+  background-color: #ffffff;
+  padding: 45px 55px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+}
+
+main h1 {
+  color: #1d6b3a;
+  border-bottom: 3px solid #f5d033;
+  padding-bottom: 12px;
+  margin-bottom: 28px;
+  font-size: 2em;
+}
+
+main h2 {
+  color: #c8302d;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+main p {
+  margin-bottom: 18px;
+  text-align: justify;
+  font-size: 1.05em;
+}
+
+main ul {
+  margin: 15px 0 20px 30px;
+}
+
+main li {
+  margin-bottom: 8px;
+}
+
+/* Liens dans le texte */
+main a {
+  color: #c8302d;
+  text-decoration: underline;
+}
+
+main a:hover {
+  color: #1d6b3a;
+}
+
+/* Images et légendes */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.image-caption {
+  font-size: 0.9em;
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Conteneur pour TimelineJS */
+.timeline-container {
+  margin: 35px 0;
+  padding: 25px;
+  background-color: #f0ebe0;
+  border-radius: 8px;
+  border-left: 5px solid #1d6b3a;
+}
+
+iframe {
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #555;
+  font-size: 0.9em;
+  border-top: 2px solid #f5d033;
+  margin-top: 20px;
+}
+
+/* Adaptation pour les téléphones */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  main {
+    padding: 25px 20px;
+  }
+
+  main h1 {
+    font-size: 1.6em;
+  }
+
+  main h2 {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  header {
+    padding: 20px;
+  }
+}
